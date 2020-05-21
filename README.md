@@ -5,7 +5,7 @@ A Docker image containing Apache Karaf 4.2.8
 This repository contains a full operational Apache Karaf development environment,
 including the following:
 * Ubuntu 18.04.4 LTS (Bionic Beaver)
-* AdoptOpenJDK 11.07
+* AdoptOpenJDK 11.0.7
 * Apache Maven 3.6.3
 * Apache Karaf 4.2.8
 
