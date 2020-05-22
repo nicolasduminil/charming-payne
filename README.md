@@ -1,11 +1,11 @@
 # charming-payne
-A Docker image containing Apapche Karaf 4.2.8
+A Docker image containing Apache Karaf 4.2.8
 
 ## Content
 This repository contains a full operational Apache Karaf development environment,
 including the following:
 * Ubuntu 18.04.4 LTS (Bionic Beaver)
-* OpenJDK 11.07
+* AdoptOpenJDK 11.0.7
 * Apache Maven 3.6.3
 * Apache Karaf 4.2.8
 
