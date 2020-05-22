@@ -18,20 +18,22 @@ Here are the steps required to build the image:
    ```
 2. Build the image
 
-If you need to create a customized Docker container, then you need to build  
-the image first, as shown below:
+If you need to create a customized Docker container, then you need to modify
+the Dockerfile. Once done, you need to build a new image from the new Dockerfile
+and give it a tag as shown below:
  
-    ```
     cd charming-payne
     docker image build -t <tag> .
-    ```   
 If everything went well, you should see the following line in your terminal:
     
-    `Successfully tagged <tag>:latest`
+    Successfully tagged <tag>:latest
+Then you might want to push the new image to DockerHub:
+    
+    docker push <tag>
 ## Pull the image.
 If you only need to use the image as it is, then you can only pull it:
     
-        docker pull nicolasduminil/karaf4.28-openjdk11.07-maven3.6.3:latest
+    docker pull nicolasduminil/karaf4.28-openjdk11.07-maven3.6.3:latest
        
 ## Use the image
 Once you've built or pulled the image, you can create a Docker container to
