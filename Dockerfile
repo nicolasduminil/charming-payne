@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11
 LABEL Nicolas DUMINIL <nicolas.duminil@simplex-software.fr>
-RUN apt-get update && apt-get install -y curl tar bash procps wget
+RUN apt-get update && apt-get install -y apt-utils curl tar bash procps wget netcat net-tools iproute2
 ARG MAVEN_VERSION="3.6.3"
 ARG USER_HOME_DIR="/root"
 ARG BASE_URL=https://apache.mediamirrors.org/maven/maven-3/${MAVEN_VERSION}/binaries/
